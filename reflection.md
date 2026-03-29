@@ -27,9 +27,7 @@ Yes, the design changed slightly during implementation. Initially, the relations
 
 **b. Tradeoffs**
 
-- Describe one tradeoff your scheduler makes.
-- Why is that tradeoff reasonable for this scenario?
-
+One tradeoff in my scheduler is that conflict detection only checks for tasks with the exact same time rather than overlapping durations. This simplifies the implementation and keeps the algorithm efficient, but it may miss more complex scheduling conflicts where tasks partially overlap. I chose this approach to keep the system simple and easy to understand while still demonstrating basic conflict detection.
 ---
 
 ## 3. AI Collaboration
