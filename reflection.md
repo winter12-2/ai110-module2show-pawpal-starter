@@ -22,25 +22,23 @@ Yes, the design changed slightly during implementation. Initially, the relations
 
 **a. Constraints and priorities**
 
-- What constraints does your scheduler consider (for example: time, priority, preferences)?
-- How did you decide which constraints mattered most?
+The scheduler considers several key constraints, including available time, task duration, and task priority. Tasks with higher priority are selected first, and the scheduler ensures that the total duration does not exceed the owner's available time. Preferences can also influence how tasks are interpreted, although they are not strictly enforced in the current implementation. I decided that priority and time constraints mattered most because they directly affect whether tasks can realistically be completed in a given day.
 
 **b. Tradeoffs**
 
 One tradeoff in my scheduler is that conflict detection only checks for tasks with the exact same time rather than overlapping durations. This simplifies the implementation and keeps the algorithm efficient, but it may miss more complex scheduling conflicts where tasks partially overlap. I chose this approach to keep the system simple and easy to understand while still demonstrating basic conflict detection.
+
 ---
 
 ## 3. AI Collaboration
 
 **a. How you used AI**
 
-- How did you use AI tools during this project (for example: design brainstorming, debugging, refactoring)?
-- What kinds of prompts or questions were most helpful?
+I used AI tools throughout the project for brainstorming system design, generating class structures, debugging errors, and improving code organization. AI was especially helpful when creating the UML design, implementing scheduling logic, and integrating the backend with the Streamlit UI. The most helpful prompts were specific and task-oriented, such as asking how to implement sorting, filtering, or conflict detection in a scheduler.
 
 **b. Judgment and verification**
 
-- Describe one moment where you did not accept an AI suggestion as-is.
-- How did you evaluate or verify what the AI suggested?
+There were situations where I did not accept AI suggestions directly, especially when the solutions were overly complex or did not match the assignment requirements. I evaluated suggestions by testing them in my code and checking whether they aligned with the project goals. If a solution made the system harder to understand, I simplified it to maintain clarity and correctness.
 
 ---
 
@@ -48,13 +46,11 @@ One tradeoff in my scheduler is that conflict detection only checks for tasks wi
 
 **a. What you tested**
 
-- What behaviors did you test?
-- Why were these tests important?
+I tested several key behaviors, including task completion, adding tasks to pets, sorting tasks by time, recurring task generation, and conflict detection. These tests were important because they ensured that the core functionality of the scheduler worked correctly and handled both normal and edge cases.
 
 **b. Confidence**
 
-- How confident are you that your scheduler works correctly?
-- What edge cases would you test next if you had more time?
+I am highly confident that my scheduler works correctly for the main use cases, as all tests pass successfully. However, if I had more time, I would test additional edge cases such as overlapping task durations, multiple pets with complex schedules, and more advanced recurring task patterns.
 
 ---
 
@@ -62,12 +58,12 @@ One tradeoff in my scheduler is that conflict detection only checks for tasks wi
 
 **a. What went well**
 
-- What part of this project are you most satisfied with?
+The part I am most satisfied with is the scheduling logic and how it integrates with the Streamlit UI. The system successfully connects backend logic with a user-friendly interface, making it easy to use and understand.
 
 **b. What you would improve**
 
-- If you had another iteration, what would you improve or redesign?
+If I had another iteration, I would improve the scheduling algorithm to handle overlapping time conflicts more accurately and support more advanced recurring tasks. I would also enhance the UI by allowing users to assign tasks to specific pets more clearly.
 
 **c. Key takeaway**
 
-- What is one important thing you learned about designing systems or working with AI on this project?
+One important takeaway from this project is the value of combining clear system design with incremental development. I also learned how to effectively use AI as a tool for guidance while still applying my own judgment to ensure the final solution is correct and understandable.

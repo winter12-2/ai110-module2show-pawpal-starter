@@ -52,3 +52,18 @@ The PawPal+ system was enhanced with additional algorithms to improve scheduling
 - Support for recurring tasks (daily)
 
 These features make the scheduling system more intelligent and practical for real-world use.
+
+## Testing PawPal+
+
+Run tests using:
+
+python -m pytest
+
+The test suite verifies:
+- Task completion behavior
+- Adding tasks to pets
+- Sorting tasks by time
+- Recurring task generation
+- Conflict detection for overlapping tasks
+
+Confidence Level: ⭐⭐⭐⭐⭐ (5/5)
