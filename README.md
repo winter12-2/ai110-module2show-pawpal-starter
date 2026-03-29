@@ -67,3 +67,5 @@ The test suite verifies:
 - Conflict detection for overlapping tasks
 
 Confidence Level: ⭐⭐⭐⭐⭐ (5/5)
+
+When the scheduler detects a conflict, it should be presented as a clear warning message in the UI using components like `st.warning`. The message should highlight which tasks conflict and at what time so the user can easily understand and adjust their schedule. This approach improves usability by providing immediate feedback without interrupting the app flow.

@@ -67,3 +67,13 @@ If I had another iteration, I would improve the scheduling algorithm to handle o
 **c. Key takeaway**
 
 One important takeaway from this project is the value of combining clear system design with incremental development. I also learned how to effectively use AI as a tool for guidance while still applying my own judgment to ensure the final solution is correct and understandable.
+
+## AI Strategy Reflection
+
+I used VS Code Copilot extensively throughout this project for generating class structures, debugging errors, and implementing algorithms like sorting and conflict detection. Copilot was most effective when I provided clear, specific prompts about the functionality I wanted to implement.
+
+One example where I modified an AI suggestion was when it generated overly complex logic for scheduling. I simplified it into a greedy algorithm to keep the system easy to understand and aligned with project requirements.
+
+Using separate chat sessions for different phases (design, implementation, testing) helped me stay organized and focused on one problem at a time.
+
+Overall, I learned that while AI is a powerful tool, it is important to act as the "lead architect" by reviewing, simplifying, and validating all generated solutions.
