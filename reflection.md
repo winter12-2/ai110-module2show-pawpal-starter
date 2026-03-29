@@ -4,13 +4,17 @@
 
 **a. Initial design**
 
-- Briefly describe your initial UML design.
-- What classes did you include, and what responsibilities did you assign to each?
+The PawPal+ system allows users to manage pet care efficiently. First, users can add and update information about their pets, which helps customize the experience. Second, users can create and manage care tasks such as feeding, walking, and medication, including details like duration and priority. Finally, the system generates a daily care plan based on available time, task priorities, and user preferences, and provides an explanation for the chosen schedule. 
+
+The system is designed using four main classes: Owner, Pet, Task, and Scheduler. 
+The Owner class stores user information and available time. 
+The Pet class represents the pet and is linked to the owner. 
+The Task class defines individual care activities with attributes like duration and priority. 
+The Scheduler class contains the main logic to organize tasks into a daily plan based on constraints and priorities.
 
 **b. Design changes**
 
-- Did your design change during implementation?
-- If yes, describe at least one change and why you made it.
+Yes, the design changed slightly during implementation. Initially, the relationships between classes were more abstract, but during coding I explicitly linked the Pet class to the Owner class and ensured the Scheduler directly manages a list of Task objects. I also added default lists using dataclasses to simplify initialization. These changes made the system more practical and easier to implement in Python.
 
 ---
 
